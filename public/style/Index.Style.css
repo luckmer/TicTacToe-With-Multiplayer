@@ -1,0 +1,111 @@
+.grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1500px;
+  margin: 90px auto;
+  height: 100%;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 8vw;
+  font-family: 'Red Hat Text',
+    sans-serif;
+  margin-block-start: 0.2em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.header img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.header span {
+  margin-block-end: 0.67em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 3vh;
+  line-height: 77px;
+  letter-spacing: 0.4em;
+  color: #E08632;
+}
+
+.panel {
+  text-align: center;
+  padding-top: 30px;
+
+}
+
+.panel a {
+  padding: 0.75vh 2vw 0.75vh 2vw;
+  margin: 0 2vw 0 2vw;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+  color: #F4F5F7;
+  font-size: 3vh;
+}
+
+
+
+.multi {
+  width: 246px;
+  height: 39px;
+  left: 880px;
+  top: 745px;
+  background: linear-gradient(270deg, #C4C4C4 0%, #D92987 0.01%, #C32DB5 51.04%, #AB31E7 100%);
+  border-radius: 19.5px;
+}
+
+.multi:hover {
+  background: linear-gradient(270deg, #AB31E7 0%, #C32DB5 51.04%, #D92987 100%);
+}
+
+.single:hover {
+  background: linear-gradient(270deg, #F89841 0%, #F85F86 100%);
+}
+
+.single {
+  width: 246px;
+  height: 39px;
+  left: 369px;
+  top: 745px;
+  background: linear-gradient(270deg, #F85F86 0%, #F89841 100%);
+  border-radius: 19.5px;
+}
+
+.tag {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 830px) {
+  .grid {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 2000px) {
+  .header h1 {
+    font-size: 150px;
+    font-family: 'Red Hat Text',
+      sans-serif;
+  }
+}
