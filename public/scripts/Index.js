@@ -233,15 +233,3 @@ const ButtonJoystick = () => {
   }
 };
 ButtonJoystick();
-
-exports.Winposition = Winposition;
-exports.states = States;
-exports.current = current;
-exports.playerNum = playerNum;
-exports.currentPlayer = currentPlayer;
-exports.controlTest = controlTest;
-exports.Platforms = Platforms;
-exports.TurnOnOffGame = TurnOnOffGame;
-exports.MultiGameMode = MultiGameMode;
-exports.SingleGameMode = SingleGameMode;
-exports.Control = Control;

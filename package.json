@@ -2,10 +2,10 @@
   "name": "way",
   "version": "1.0.0",
   "description": "game",
-  "main": "server.js",
+  "main": "Server.js",
   "scripts": {
-    "start": "node server",
-    "dev": "nodemon server"
+    "start": "node Server",
+    "dev": "nodemon Server"
   },
   "keywords": [],
   "author": "",
