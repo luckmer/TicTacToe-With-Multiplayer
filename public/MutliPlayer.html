@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/Game.Style.css" />
+    <link rel="stylesheet" href="./style/Global.css" />
+  </head>
+  <body>
+    <nav class="NavBar activate">
+      <div class="player p1">
+        Player 1
+        <div class="connected"><span></span></div>
+      </div>
+      <div class="player p2">
+        Player 2
+        <div class="connected"><span></span></div>
+      </div>
+    </nav>
+
+    <article class="grid">
+      <section class="game-panel">
+        <div class="game-header">
+          <h1></h1>
+          <span></span>
+        </div>
+        <div class="test">
+          <div class="game-puzzle"></div>
+          <div class="game-chat-place">
+            <div class="game-chat-messages">
+              <div class="game-chat-result-message"></div>
+              <div class="game-form">
+                <form id="form" action="">
+                  <input id="input" placeholder="..." autocomplete="off" />
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <script>
+      let Control = "MultiPlayer";
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="./scripts/Index.js"></script>
+  </body>
+</html>
