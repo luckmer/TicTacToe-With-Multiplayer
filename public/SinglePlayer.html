@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/Game.Style.css" />
+    <link rel="stylesheet" href="./style/Global.css" />
+  </head>
+  <body>
+    <article class="grid">
+      <section class="game-panel">
+        <div class="game-header">
+          <h1>Next Move: O</h1>
+        </div>
+        <div class="game-puzzle"></div>
+      </section>
+    </article>
+    <script>
+      let Control = "SinglePlayer";
+    </script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script defer src="./scripts/Index.js"></script>
+  </body>
+</html>
