@@ -6,8 +6,10 @@ const app = express();
 const server = http.createServer(app);
 const socket = require("socket.io");
 const io = socket(server);
-app.use(express.static(path.join(__dirname, "public")));
-server.listen(PORT, () => console.log(`Server running on port ${PORT}`));
+const serverless = require("serverless-http");
+
+app.use("/", express.static(path.resolve("public")));
+server.listen(PORT);
 
 let Players = ["", ""];
 
@@ -62,3 +64,6 @@ io.on("connection", (socket) => {
     socket.disconnect();
   }, 600000);
 });
+
+module.exports = app;
+module.exports.handler = serverless(app);
