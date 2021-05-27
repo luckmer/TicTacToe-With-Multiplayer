@@ -7,8 +7,9 @@ const server = http.createServer(app);
 const socket = require("socket.io");
 const io = socket(server);
 const serverless = require("serverless-http");
-
+const router = express.Router();
 app.use("/", express.static(path.resolve("public")));
+app.use("/", router);
 server.listen(PORT);
 
 let Players = ["", ""];
